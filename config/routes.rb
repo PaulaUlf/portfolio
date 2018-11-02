@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :members
+  resources :projects
   resources :portraits
   resources :people
   resources :groups

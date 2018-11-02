@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181030110016) do
+ActiveRecord::Schema.define(version: 20181102114920) do
 
   create_table "groups", force: :cascade do |t|
     t.integer  "year_start"
@@ -37,8 +37,17 @@ ActiveRecord::Schema.define(version: 20181030110016) do
     t.integer  "person_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string   "portrait"
     t.string   "photo"
+  end
+
+  create_table "projects", force: :cascade do |t|
+    t.integer  "level"
+    t.integer  "group_id"
+    t.string   "name"
+    t.string   "description"
+    t.string   "cover"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end
