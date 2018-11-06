@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181102115703) do
+ActiveRecord::Schema.define(version: 20181106111009) do
 
   create_table "groups", force: :cascade do |t|
     t.integer  "year_start"
@@ -55,6 +55,7 @@ ActiveRecord::Schema.define(version: 20181102115703) do
     t.string   "cover"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.string   "image"
   end
 
 end

@@ -33,7 +33,12 @@
 
   <div class="field">
     <%= f.label :cover %>
-    <%= f.text_field :cover %>
+    <%= f.file_field :cover %>
+  </div>
+
+  <div class=”field”>
+	  <%= f.label :image %>
+	  <%= f.file_field :image, :multiple => true %>
   </div>
 
   <div class="actions">

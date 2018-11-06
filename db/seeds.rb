@@ -10,12 +10,12 @@ Group.create([
   }
   ])
 
-Person.create([
-  {
-    first_name: 'Анна',
-    last_name: 'Ковыляева'
-  },{
-    first_name: 'Иван',
-    last_name: 'Иванов'
-  }
-  ])
+# Person.create([
+#   {
+#     first_name: 'Анна',
+#     last_name: 'Ковыляева'
+#   },{
+#     first_name: 'Иван',
+#     last_name: 'Иванов'
+#   }
+#   ])

@@ -20,10 +20,18 @@
   <%= @project.description %>
 </p>
 
-<p>
+<!-- <p>
   <strong>Cover:</strong>
   <%= @project.cover %>
-</p>
+</p> -->
+<div>
+  <%= cover_tag @project.cover %>
+</div>
+
+<div>
+  <%= image_tag @project.image %>
+</div>
+
 
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>

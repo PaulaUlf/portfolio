@@ -17,20 +17,20 @@
   </div>
 
   <div class="field">
-    <%= f.label :image %>
-    <%= f.text_field :image %>
-  </div>
-
-  <div class=”field”>
-	<%= f.label :photo %>
-	<%= f.file_field :photo %>
-</div>
-
-
-  <div class="field">
     <%= f.label :person_id %>
     <%= f.number_field :person_id %>
   </div>
+
+<!--
+  <div class="field">
+    <%= f.label :image %>
+    <%= f.text_field :image %>
+  </div> -->
+
+  <div class=”field”>
+	<%= f.label :photo %>
+	<%= f.file_field :photo, :multiple => true %>
+</div>
 
   <div class="actions">
     <%= f.submit %>
