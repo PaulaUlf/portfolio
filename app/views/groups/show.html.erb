@@ -27,8 +27,13 @@
 
 <p>
   <strong>Cover:</strong>
-  <%= @group.cover %>
 </p>
+
+<div>
+ <%= image_tag @group.groupcover %>
+</div>
+
+
 
 <%= link_to 'Edit', edit_group_path(@group) %> |
 <%= link_to 'Back', groups_path %>

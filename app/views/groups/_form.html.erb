@@ -36,10 +36,15 @@
     <%= f.text_field :kind, id: :group_kind %>
   </div>
 
-  <div class="field">
+  <!-- <div class="field">
     <%= f.label :cover %>
     <%= f.file_field :cover %>
-  </div>
+  </div> -->
+
+  <div class=”field”>
+  	  <%= f.label :groupcover %>
+  	  <%= f.file_field :groupcover, :multiple => true %>
+    </div>
 
   <div class="actions">
     <%= f.submit %>
