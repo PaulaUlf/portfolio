@@ -13,32 +13,32 @@
 
   <div class="field">
     <%= f.label :year_start %>
-    <%= f.number_field :year_start %>
+    <%= f.number_field :year_start, id: :group_year_start %>
   </div>
 
   <div class="field">
     <%= f.label :year_end %>
-    <%= f.number_field :year_end %>
+    <%= f.number_field :year_end, id: :group_year_end %>
   </div>
 
   <div class="field">
     <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, id: :group_name, in: 1..4 %>
   </div>
 
   <div class="field">
     <%= f.label :level_quantity %>
-    <%= f.number_field :level_quantity %>
+    <%= f.number_field :level_quantity, id: :group_level_quantity %>
   </div>
 
   <div class="field">
     <%= f.label :kind %>
-    <%= f.text_field :kind %>
+    <%= f.text_field :kind, id: :group_kind %>
   </div>
 
   <div class="field">
     <%= f.label :cover %>
-    <%= f.text_field :cover %>
+    <%= f.file_field :cover %>
   </div>
 
   <div class="actions">
